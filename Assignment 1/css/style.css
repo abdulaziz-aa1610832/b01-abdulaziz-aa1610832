@@ -1,0 +1,272 @@
+nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.selected-page {
+  color: rgb(187, 46, 46);
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.download-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: rgb(255, 91, 85);
+  color: white;
+  font-size: medium;
+  width: calc(50% - 1em);
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 3% auto 7%;
+  position: relative;
+  z-index: 4;
+}
+.download-btn:hover {
+  background-color: rgb(168, 108, 106);
+}
+.recent-posts-head {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.work-img {
+  border-radius: 5%;
+}
+.posts {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 12px;
+}
+.post {
+  background-color: white;
+  padding: 0 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.posts-section {
+  background-color: #ebf6fc;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.work {
+  display: flex;
+  gap: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Roboto Serif", sans-serif;
+}
+.intro-text {
+  font-size: 3rem;
+}
+.paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.intro-section {
+  display: flex;
+}
+.view-all {
+  color: #53c8da;
+  font-weight: 600;
+}
+.view-all:hover {
+  color: rgb(0, 0, 0);
+}
+.featured-works-head {
+  margin: 1.5rem 0;
+}
+
+.social-icons {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.rounded-box {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#contact-page {
+  display: flex;
+}
+#info-section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 0.5rem;
+}
+.info-section h3 {
+  font-family: "Roboto Serif", sans-serif;
+}
+.info-section p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#name-email {
+  display: flex;
+  gap: 2rem;
+}
+
+#name-email input {
+  padding: 0.5rem 0.5rem;
+}
+#message-label {
+  display: block;
+}
+.input-label-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#form-section label {
+  font-weight: 600;
+}
+#send-button {
+  width: 10em;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.contact-social-icons {
+  font-size: 2rem;
+  display: flex;
+  gap: 2.5rem;
+}
+#contact-me {
+  font-size: 2.5rem;
+}
+.work-type {
+  color: gray;
+}
+@media screen and (max-width: 60rem) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .posts {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .recent-posts-head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .featured-works-head {
+    text-align: center;
+  }
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro-info {
+    text-align: center;
+  }
+  .work-img {
+    width: 40%;
+  }
+
+  .intro-info {
+    order: 2;
+  }
+
+  #contact-page {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #name-email {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #info-section {
+    order: 2;
+  }
+  #form-section {
+    order: 1;
+  }
+  #message {
+    width: 100%;
+  }
+  #contact-me {
+    text-align: center;
+  }
+}
