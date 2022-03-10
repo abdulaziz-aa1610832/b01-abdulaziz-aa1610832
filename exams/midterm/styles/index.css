@@ -1,0 +1,35 @@
+#quotes{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 1.2rem;
+}
+.tile{
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tileBottom{
+    display: flex;
+    justify-content: space-between;
+}
+.author{
+    color: rgb(153, 151, 151);
+}
+.tag{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.morebtn{
+    display: block;
+    margin: 1.5rem auto;
+    width: 15rem;
+    height: 3rem;
+    background-color: crimson;
+    color: white;
+    font-size: large;
+}
+
